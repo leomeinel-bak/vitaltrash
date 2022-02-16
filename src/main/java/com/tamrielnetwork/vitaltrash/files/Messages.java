@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfly.files;
+package com.tamrielnetwork.vitaltrash.files;
 
-import com.tamrielnetwork.vitalfly.VitalFly;
+import com.tamrielnetwork.vitaltrash.VitalTrash;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -27,7 +27,7 @@ import java.io.File;
 
 public class Messages {
 
-	private final VitalFly main = JavaPlugin.getPlugin(VitalFly.class);
+	private final VitalTrash main = JavaPlugin.getPlugin(VitalTrash.class);
 	private final File messagesFile;
 	private final FileConfiguration messagesConf;
 
