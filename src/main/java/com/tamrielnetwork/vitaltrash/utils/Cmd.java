@@ -16,40 +16,34 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitaltrash.commands;
+package com.tamrielnetwork.vitaltrash.utils;
 
-import com.tamrielnetwork.vitaltrash.utils.Cmd;
-import net.kyori.adventure.text.Component;
-import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 
-public class VitalTrashCmd implements CommandExecutor {
-
-	@Override
-	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
-		if (Cmd.checkArgsNotEqualTo(sender, args, 0)) {
+public class Cmd {
+	public static boolean checkArgsNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
+		if (args.length != length) {
+			Chat.sendMessage(sender, "cmd");
 			return true;
 		}
-		doTrash(sender);
-		return true;
-
+		return false;
 	}
 
-	private void doTrash(@NotNull CommandSender sender) {
-		Player senderPlayer = (Player) sender;
-		Inventory inventory = Bukkit.createInventory(senderPlayer, 54, Component.text("Trash"));
-
-		if (Cmd.checkSender(sender) || Cmd.checkPerm(sender, "vitaltrash.trash")) {
-			return;
+	public static boolean checkPerm(@NotNull CommandSender sender, @NotNull String perm) {
+		if (!sender.hasPermission(perm)) {
+			Chat.sendMessage(sender, "no-perms");
+			return true;
 		}
+		return false;
+	}
 
-		senderPlayer.openInventory(inventory);
-
+	public static boolean checkSender(@NotNull CommandSender sender) {
+		if (!(sender instanceof Player)) {
+			Chat.sendMessage(sender, "player-only");
+			return true;
+		}
+		return false;
 	}
 }
