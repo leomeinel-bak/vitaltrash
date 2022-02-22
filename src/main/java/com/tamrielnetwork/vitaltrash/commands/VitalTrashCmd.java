@@ -18,7 +18,7 @@
 
 package com.tamrielnetwork.vitaltrash.commands;
 
-import com.tamrielnetwork.vitaltrash.utils.Cmd;
+import com.tamrielnetwork.vitaltrash.utils.commands.Cmd;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -33,7 +33,7 @@ public class VitalTrashCmd implements CommandExecutor {
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
-		if (Cmd.checkArgsNotEqualTo(sender, args, 0)) {
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
 			return true;
 		}
 		doTrash(sender);
@@ -45,7 +45,7 @@ public class VitalTrashCmd implements CommandExecutor {
 		Player senderPlayer = (Player) sender;
 		Inventory inventory = Bukkit.createInventory(senderPlayer, 54, Component.text("Trash"));
 
-		if (Cmd.checkSender(sender) || Cmd.checkPerm(sender, "vitaltrash.trash")) {
+		if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitaltrash.trash")) {
 			return;
 		}
 

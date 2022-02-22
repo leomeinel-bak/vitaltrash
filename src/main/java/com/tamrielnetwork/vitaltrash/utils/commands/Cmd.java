@@ -16,14 +16,15 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitaltrash.utils;
+package com.tamrielnetwork.vitaltrash.utils.commands;
 
+import com.tamrielnetwork.vitaltrash.utils.Chat;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class Cmd {
-	public static boolean checkArgsNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
+	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
 		if (args.length != length) {
 			Chat.sendMessage(sender, "cmd");
 			return true;
@@ -31,7 +32,7 @@ public class Cmd {
 		return false;
 	}
 
-	public static boolean checkPerm(@NotNull CommandSender sender, @NotNull String perm) {
+	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
 		if (!sender.hasPermission(perm)) {
 			Chat.sendMessage(sender, "no-perms");
 			return true;
@@ -39,7 +40,7 @@ public class Cmd {
 		return false;
 	}
 
-	public static boolean checkSender(@NotNull CommandSender sender) {
+	public static boolean isInvalidSender(@NotNull CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			Chat.sendMessage(sender, "player-only");
 			return true;
