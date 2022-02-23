@@ -42,14 +42,15 @@ public class VitalTrashCmd implements CommandExecutor {
 	}
 
 	private void doTrash(@NotNull CommandSender sender) {
-		Player senderPlayer = (Player) sender;
-		Inventory inventory = Bukkit.createInventory(senderPlayer, 54, Component.text("Trash"));
 
 		if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitaltrash.trash")) {
 			return;
 		}
+		Player senderPlayer = (Player) sender;
+		Inventory inventory = Bukkit.createInventory(senderPlayer, 54, Component.text("Trash"));
 
 		senderPlayer.openInventory(inventory);
 
 	}
+
 }

@@ -52,6 +52,7 @@ public final class VitalTrash extends JavaPlugin {
 	}
 
 	public Messages getMessages() {
+
 		return messages;
 	}
 
