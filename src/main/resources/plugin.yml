@@ -6,9 +6,9 @@ authors: [ Tamriel Network ]
 website: https://tamriel.site
 description: Gives players the ability to open a trash interface.
 commands:
-  vitaltrash:
+  trash:
     description: "Main command"
-    usage: "/vitaltrash"
+    usage: "/trash"
 permissions:
   vitaltrash.trash:
     description: "Permission to toggle crafting interface"

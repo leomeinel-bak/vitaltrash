@@ -32,9 +32,7 @@ public final class VitalTrash extends JavaPlugin {
 	@Override
 	public void onEnable() {
 
-		Objects.requireNonNull(getCommand("vitaltrash")).setExecutor(new VitalTrashCmd());
-
-		saveDefaultConfig();
+		Objects.requireNonNull(getCommand("trash")).setExecutor(new VitalTrashCmd());
 
 		messages = new Messages();
 

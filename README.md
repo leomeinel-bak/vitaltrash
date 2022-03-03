@@ -85,7 +85,7 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitaltrash.trash`
 
-* Command: `/vitaltrash`
+* Command: `/trash`
 * Description: Toggle trash interface
 
 ### Configuration - config.yml
