@@ -16,34 +16,31 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitaltrash.files;
+package dev.meinel.leo.vitaltrash.utils;
 
-import com.tamrielnetwork.vitaltrash.VitalTrash;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
+import dev.meinel.leo.vitaltrash.VitalTrash;
+import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
-import java.io.File;
+import java.util.Objects;
 
-public class Messages {
+public class Chat {
 
-	private final VitalTrash main = JavaPlugin.getPlugin(VitalTrash.class);
-	private final File messagesFile;
-	private final FileConfiguration messagesConf;
+	private static final VitalTrash main = JavaPlugin.getPlugin(VitalTrash.class);
 
-	public Messages() {
-		messagesFile = new File(main.getDataFolder(), "messages.yml");
-		saveMessagesFile();
-		messagesConf = YamlConfiguration.loadConfiguration(messagesFile);
+	private Chat() {
+		throw new IllegalStateException("Utility class");
 	}
 
-	private void saveMessagesFile() {
-		if (!messagesFile.exists()) {
-			main.saveResource("messages.yml", false);
-		}
+	public static void sendMessage(@NotNull CommandSender player, @NotNull String message) {
+		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages()
+		                                                            .getMessagesConf()
+		                                                            .getString(message))));
 	}
 
-	public FileConfiguration getMessagesConf() {
-		return messagesConf;
+	public static String replaceColors(@NotNull String string) {
+		return ChatColor.translateAlternateColorCodes('&', string);
 	}
 }

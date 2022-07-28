@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitaltrash;
+package dev.meinel.leo.vitaltrash;
 
-import com.tamrielnetwork.vitaltrash.commands.VitalTrashCmd;
-import com.tamrielnetwork.vitaltrash.files.Messages;
+import dev.meinel.leo.vitaltrash.commands.VitalTrashCmd;
+import dev.meinel.leo.vitaltrash.files.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

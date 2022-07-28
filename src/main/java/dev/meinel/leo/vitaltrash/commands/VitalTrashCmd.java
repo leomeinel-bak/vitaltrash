@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalTrash/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitaltrash.commands;
+package dev.meinel.leo.vitaltrash.commands;
 
-import com.tamrielnetwork.vitaltrash.utils.commands.Cmd;
+import dev.meinel.leo.vitaltrash.utils.commands.Cmd;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;

@@ -6,7 +6,7 @@ plugins {
     id 'java'
     id "org.sonarqube" version "3.4.0.2513"
 }
-group 'com.tamrielnetwork.vitaltrash'
+group 'dev.meinel.leo.vitaltrash'
 version '1.0.0'
 
 repositories {
@@ -30,8 +30,8 @@ processResources {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "TamrielNetwork_VitalTrash"
-        property "sonar.organization", "tamrielnetwork"
+        property "sonar.projectKey", "LeoMeinel_VitalTrash"
+        property "sonar.organization", "LeoMeinel"
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }

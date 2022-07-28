@@ -1,6 +1,6 @@
 name: VitalTrash
 version: @version@
-main: com.tamrielnetwork.vitaltrash.VitalTrash
+main: dev.meinel.leo.vitaltrash.VitalTrash
 api-version: 1.17
 authors: [ Leopold Meinel ]
 description: Gives players the ability to open a trash interface.
