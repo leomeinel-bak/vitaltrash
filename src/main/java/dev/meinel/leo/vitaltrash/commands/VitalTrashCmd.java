@@ -22,29 +22,29 @@ import org.jetbrains.annotations.NotNull;
 
 public class VitalTrashCmd implements CommandExecutor {
 
-  @Override
-  public boolean onCommand(
-      @NotNull CommandSender sender,
-      @NotNull Command command,
-      @NotNull String label,
-      @NotNull String[] args) {
-    if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
-      return false;
+    @Override
+    public boolean onCommand(
+            @NotNull CommandSender sender,
+            @NotNull Command command,
+            @NotNull String label,
+            @NotNull String[] args) {
+        if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+            return false;
+        }
+        doTrash(sender);
+        return true;
     }
-    doTrash(sender);
-    return true;
-  }
 
-  private void doTrash(@NotNull CommandSender sender) {
-    if (Cmd.isInvalidSender(sender) ||
-        Cmd.isNotPermitted(sender, "vitaltrash.trash")) {
-      return;
+    private void doTrash(@NotNull CommandSender sender) {
+        if (Cmd.isInvalidSender(sender) ||
+                Cmd.isNotPermitted(sender, "vitaltrash.trash")) {
+            return;
+        }
+        Player senderPlayer = (Player) sender;
+        Inventory inventory = Bukkit.createInventory(
+                senderPlayer,
+                54,
+                Component.text("Trash"));
+        senderPlayer.openInventory(inventory);
     }
-    Player senderPlayer = (Player) sender;
-    Inventory inventory = Bukkit.createInventory(
-        senderPlayer,
-        54,
-        Component.text("Trash"));
-    senderPlayer.openInventory(inventory);
-  }
 }
