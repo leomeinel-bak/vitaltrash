@@ -15,7 +15,7 @@ plugins {
     id "org.sonarqube" version "3.4.0.2513"
 }
 group 'dev.meinel.leo.vitaltrash'
-version '1.0.0'
+version '1.0.1'
 
 repositories {
     mavenCentral()
