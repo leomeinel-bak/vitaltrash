@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/VitalTrash">
+  <a href="https://github.com/LeoMeinel/vitaltrash">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     Open a trash interface on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/VitalTrash"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/vitaltrash"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/VitalTrash">View Demo</a>
+    <a href="https://github.com/LeoMeinel/vitaltrash">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalTrash/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/vitaltrash/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalTrash/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/vitaltrash/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -74,7 +74,7 @@ player-only: "&cThis command can only be executed by players!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/VitalTrash/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/vitaltrash/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -102,7 +102,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [VitalTrash](https://github.com/LeoMeinel/VitalTrash) - GitHub
+Project Link - [VitalTrash](https://github.com/LeoMeinel/vitaltrash) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -112,15 +112,15 @@ Project Link - [VitalTrash](https://github.com/LeoMeinel/VitalTrash) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalTrash?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/VitalTrash/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalTrash?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/VitalTrash/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalTrash?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/VitalTrash/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalTrash?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/VitalTrash/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalTrash?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/VitalTrash/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalTrash?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalTrash
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/vitaltrash?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/vitaltrash/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/vitaltrash?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/vitaltrash/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/vitaltrash?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/vitaltrash/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/vitaltrash?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/vitaltrash/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/vitaltrash?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/vitaltrash/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/vitaltrash?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/vitaltrash
