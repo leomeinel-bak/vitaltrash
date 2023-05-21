@@ -25,7 +25,7 @@ public class VitalTrashCmd implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command,
             @NotNull String label, @NotNull String[] args) {
-        if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+        if (!Cmd.isArgsLengthEqualTo(sender, args, 0)) {
             return false;
         }
         doTrash(sender);
@@ -33,7 +33,7 @@ public class VitalTrashCmd implements CommandExecutor {
     }
 
     private void doTrash(@NotNull CommandSender sender) {
-        if (Cmd.isInvalidSender(sender) || Cmd.isNotPermitted(sender, "vitaltrash.trash")) {
+        if (Cmd.isInvalidSender(sender) || !Cmd.isPermitted(sender, "vitaltrash.trash")) {
             return;
         }
         Player senderPlayer = (Player) sender;
